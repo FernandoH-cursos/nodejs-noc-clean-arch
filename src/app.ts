@@ -1,5 +1,4 @@
 import 'dotenv/config';
-import { envs } from './config/plugins/envs.plugin';
 import { Server } from "./presentation/server";
 
 
@@ -7,7 +6,14 @@ import { Server } from "./presentation/server";
   main();
 })();
 
-function main(){
-  // Server.start();
-  console.log(envs.PORT);
+
+function main() {
+  Server.start();
 }
+
+
+
+
+
+
+
