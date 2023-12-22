@@ -16,7 +16,9 @@ procesos de monitorio y envia correos.
 - #### NodeMailer - [nodemailer](https://www.npmjs.com/package/nodemailer).
 - #### Mongoose ORM - [mongoose](https://www.npmjs.com/package/mongoose).
 - #### Prisma ORM - [prisma](https://www.npmjs.com/package/prisma).
-- #### TypeORM (superficialmente) - [typeorm](https://www.npmjs.com/package/typeorm).
+- #### Crear base de datos de _MongoDB_ y _PosgreSQL_ usando _Docker_ y variables de entorno, usando `.env` y `docker-compose.yml`.
+- #### Pruebas unitarias con Jest + Typescript en una arquitectura limpia.
+- #### Crear base de datos de _MongoDB_ y _PosgreSQL_ para entorno de testing usando _Docker_ y variables de entorno, usando `.env.test` y `docker-compose.test.yml`.
 
 
 ## Estructura de Arquitectura Limpia

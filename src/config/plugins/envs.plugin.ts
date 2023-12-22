@@ -13,4 +13,10 @@ export const envs = {
   MAILER_SECRET_KEY: env.get("MAILER_SECRET_KEY").required().asString(),
   //* Validando PROD para que sea requerido y se devuelva como un booleano
   PROD: env.get("PROD").required().asBool(),
+
+  //? MongoDB 
+  MONGO_URL: env.get("MONGO_URL").required().asString(),
+  MONGO_DB_NAME: env.get("MONGO_DB_NAME").required().asString(),
+  MONGO_USER: env.get("MONGO_USER").required().asString(),
+  MONGO_PASS: env.get("MONGO_PASS").required().asString(),
 };

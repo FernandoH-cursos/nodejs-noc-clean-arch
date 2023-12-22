@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+//* Base de datos a usar en prisma 
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_URL")
+}
+
+//* Enumeracion de los niveles de log 
+enum SeverityLevel {
+  LOW
+  MEDIUM
+  HIGH
+}
+
+//* Modelo de Log 
+model LogModel{
+  id Int @id @default(autoincrement())
+  message String
+  origin String
+  level SeverityLevel
+  createdAt DateTime @default(now())
+}
